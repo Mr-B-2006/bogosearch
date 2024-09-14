@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Arrow Engine Core">
+      <UniqueIdentifier>{9ecda38f-5a1c-4380-85a0-cd2d72102a40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Arrow Engine Core\Geometry">
+      <UniqueIdentifier>{01f97af3-c253-4582-85c3-e51be688fe5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Arrow Engine Core\GUI Elements">
+      <UniqueIdentifier>{3597ba7f-bd52-47da-b1ea-9fee0a8f798c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Arrow Engine Core\GUI Elements\Buttons">
+      <UniqueIdentifier>{faf9d9f0-2794-4b40-b05d-fb39aeebcb4b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main_menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="States.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Incrementor.cpp">
+      <Filter>Header Files\Arrow Engine Core\GUI Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawable_calculations.cpp">
+      <Filter>Header Files\Arrow Engine Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Base_Button.cpp">
+      <Filter>Header Files\Arrow Engine Core\GUI Elements\Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="Rect_Button.cpp">
+      <Filter>Header Files\Arrow Engine Core\GUI Elements\Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualiser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="States.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect_Button.h">
+      <Filter>Header Files\Arrow Engine Core\GUI Elements\Buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="main_menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Incrementor.h">
+      <Filter>Header Files\Arrow Engine Core\GUI Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable_calculations.h">
+      <Filter>Header Files\Arrow Engine Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Base_Button.h">
+      <Filter>Header Files\Arrow Engine Core\GUI Elements\Buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualiser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

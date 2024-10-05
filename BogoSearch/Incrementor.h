@@ -7,6 +7,9 @@
 #include <SFML/Graphics.hpp>
 #include "Drawable_calculations.h"
 
+//TO DO: create triangular button class and implement triangular buttons
+//in incrementors
+
 enum inc_states
 {
 	not_pressed= 0, down = 1, up = 2

@@ -29,7 +29,7 @@ public:
 	main_menu(sf::RenderTexture& rt, sf::View& view, sf::Font& fnt) : start_button(-1, -1, sf::Color(255, 0, 0), fnt, "Start", sf::Color(0, 0, 0)),
 		quit_button(-1, -1, sf::Color(255, 0, 0), fnt, "Quit", sf::Color(0, 0, 0)),
 		select_spd_inc("Selection speed (fps):", fnt, 16, sf::Vector2f(0, 0), sf::Vector2f(0, 20), sf::Color(255, 0, 0), 0, "No limit", 0, std::numeric_limits<int>::max(), 0),
-		num_indices_inc("Number of indices (blocks):", fnt, 16, sf::Vector2f(0, 0), sf::Vector2f(0, 20 + 16 * 2), sf::Color(255, 0, 0), 800, "", 1, std::numeric_limits<int>::max(), 0),
+		num_indices_inc("Number of indices (blocks):", fnt, 16, sf::Vector2f(0, 0), sf::Vector2f(0, 20 + 16 * 2), sf::Color(255, 0, 0), 820, "", 1, std::numeric_limits<int>::max(), 0),
 		back_button(-1, -1, sf::Color(255, 0, 0), fnt, "Back", sf::Color(0, 0, 0)),//													^change back to 1
 		submit_button(-1, -1, sf::Color(255, 0, 0), fnt, "Submit", sf::Color(0, 0, 0)),
 		select_index(-1, -1, sf::Color(255, 0, 0), fnt, "Select index to find", sf::Color(0,0,0))

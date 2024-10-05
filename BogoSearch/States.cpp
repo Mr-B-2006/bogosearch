@@ -15,7 +15,7 @@ void States::state_manager_event(sf::RenderTexture &rt, sf::RenderWindow &win, s
 			set.select_spd = mm.select_spd;
 			set.num_indices = mm.num_indices;
 			vis.display_set_settings(rt, view, set.select_spd, set.num_indices);
-			vis.display_indices(rt, view);
+			//vis.display_indices(rt, view);
 		}
 		break;
 	case state_keys::vis_preview:

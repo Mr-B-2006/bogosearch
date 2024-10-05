@@ -1,0 +1,6 @@
+~This txt file intends to convey the meaning of each colour an index (square) may be given (even though you should hopefully be able to get the idea by just using the program):
+-red(255, 0, 0): default, nothing of note is happening with this index
+-yellow(210, 163, 0): your mouse is hovering over this index, if you click it you can select it as the desired index to be found
+-purple(177, 52, 168): this is the index Bogosearch has selected
+-light blue(16, 211, 247): this index is the index BogoSearch is looking for
+-green(69, 198, 26): the index has been found

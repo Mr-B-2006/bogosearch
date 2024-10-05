@@ -11,6 +11,8 @@
 #include <cstring>
 #include "SFML/Graphics.hpp"
 
+//MAJOR TODO: comment shit properly and get rid of comments that employers could consider haram
+
 //I want to make this kind of thing its own project, the REAL "arrow engine", i think i will also include my GUI classes here as well, for putting classes in a namespace, see this stackoverflow page: https://stackoverflow.com/questions/623903/defining-a-class-within-a-namespace
 //^ I think this should probably be done after bogosearch tho :/
 enum mouse_state //allows us to label a number with a corresponding 'state' of the mouse
@@ -21,6 +23,7 @@ enum mouse_state //allows us to label a number with a corresponding 'state' of t
 //TO DO: template functions that take in a sf::RenderWindow parameter to just take anything that derives from sf::RenderTarget
 //TO DO: maybe just make all functions inline, as having a mix of inline and not inline functions just makes this look kinda messy :/
 //TO DO: make those inline functions actually have the keyword "inline" before them idk, my code is a bit fucked i wanna kms
+//TO DO: create function for creating basic rectangle in one line (take in size and color) to reduce code repetition and to make debugging easier
 
 namespace drawable_calculations //this namespace is intended to be used to easily use common functions that will be required by the program, such as centering sprites or opening file dialogues
 {
@@ -40,7 +43,6 @@ namespace drawable_calculations //this namespace is intended to be used to easil
 		return sf::Vector2f(view.getCenter().x - (transformable.getGlobalBounds().width / 2) + x, view.getCenter().y - (transformable.getGlobalBounds().height / 2) + y);
 	}
 
-
 	template<class T, class VX, class VY>
 	sf::Vector2f place_n_center(T &transformable, VX x, VY y, sf::View &view) //DO NOT PUT view.getCenter() IN ANY PARAMETER (use initial values in drawable_calculations instead)
 	{
@@ -51,9 +53,70 @@ namespace drawable_calculations //this namespace is intended to be used to easil
 	bool chk_L_click_txt(sf::RenderWindow& win, sf::RenderTexture &rt, sf::Text& txt, sf::Event &event); //needs deprecating
 
 	template<class T>
-	inline int chk_L_click(sf::RenderTexture& rt, sf::RenderWindow &win, T &transformable, sf::Event &event, sf::Color fill_color) //cant template this for each transformable as getGlobalBounds() is not an inherited function between transformables, furthermore, we will want different implementations for shapes and sprites (we want to darken their sprites)
+	inline int chk_L_click(sf::RenderTexture& rt, sf::RenderWindow& win, T& transformable, sf::Event& event, sf::Color fill_color) //cant template this for each transformable as getGlobalBounds() is not an inherited function between transformables, furthermore, we will want different implementations for shapes and sprites (we want to darken their sprites)
 	{
 		if (transformable.getGlobalBounds().contains(win.mapPixelToCoords(sf::Mouse::getPosition(win))))
+		{
+			transformable.setFillColor(sf::Color(fill_color.r, fill_color.g, fill_color.b, 0));
+			if (event.type == sf::Event::MouseButtonReleased)
+			{
+				if (event.mouseButton.button == sf::Mouse::Left)
+				{
+					transformable.setFillColor(sf::Color(fill_color.r, fill_color.g, fill_color.b, 255)); //prevents the button looking like its being hovered over when changing between states
+					return mouse_state::click;
+				}
+			}
+			return mouse_state::hovering;
+		}
+		else if (transformable.getFillColor().a == 0)
+		{
+			transformable.setFillColor(sf::Color(fill_color.r, fill_color.g, fill_color.b, 255));
+		}
+		return mouse_state::untouched;
+	}
+
+	//make functions for getting positions of different corners of a view
+	//using sf::View::getCenter (yes it works and can be used to get view
+	//displacement from the world origin)
+
+	inline sf::Vector2f get_view_TopLeft_corner(sf::View &view)
+	{
+		float x_component = view.getCenter().x - (view.getSize().x / 2); //for functions like this, I intend to show each vector component explicitly for readability
+		float y_component = view.getCenter().y - (view.getSize().y / 2); //TO DO: refactor similar functions to look like this
+		return sf::Vector2f(x_component, y_component);
+	}
+
+	inline sf::Vector2f get_view_BottomLeft_corner(sf::View &view)
+	{
+		float x_component = view.getCenter().x - (view.getSize().x / 2); //for functions like this, I intend to show each vector component explicitly for readability
+		float y_component = view.getCenter().y + (view.getSize().y / 2); //TO DO: refactor similar functions to look like this
+		return sf::Vector2f(x_component, y_component);
+	}
+
+	inline sf::Vector2f get_view_TopRight_corner(sf::View& view)
+	{
+		float x_component = view.getCenter().x + (view.getSize().x / 2); //for functions like this, I intend to show each vector component explicitly for readability
+		float y_component = view.getCenter().y - (view.getSize().y / 2); //TO DO: refactor similar functions to look like this
+		return sf::Vector2f(x_component, y_component);
+	}
+	
+	inline sf::Vector2f get_view_BottomRight_corner(sf::View& view)
+	{
+		float x_component = view.getCenter().x + (view.getSize().x / 2); //for functions like this, I intend to show each vector component explicitly for readability
+		float y_component = view.getCenter().y + (view.getSize().y / 2); //TO DO: refactor similar functions to look like this
+		return sf::Vector2f(x_component, y_component);
+	}
+
+	template<class T>
+	//using functions above (when they are implemented), account for view 
+	//displacement in this function below
+	inline int chk_L_click_4_offset_rt(sf::RenderTexture& rt, sf::View& rt_v, sf::RenderWindow& win, T& transformable, sf::Event& event, sf::Color fill_color, sf::Sprite& rt_spr) //TO DO:	refactor later
+	{
+		sf::Vector2i mapped_mouse_pos(sf::Vector2i(win.mapPixelToCoords(sf::Mouse::getPosition(win))));
+
+		//std::cout << "x: " << rt.mapPixelToCoords(sf::Vector2i(0, 0)).x << " y: " << rt.mapPixelToCoords(sf::Vector2i(0, 13)).y << "\n";
+
+		if (transformable.getGlobalBounds().contains(sf::Vector2f(mapped_mouse_pos.x - rt_spr.getPosition().x, mapped_mouse_pos.y - rt_spr.getPosition().y) + get_view_TopLeft_corner(rt_v)))
 		{
 			transformable.setFillColor(sf::Color(fill_color.r, fill_color.g, fill_color.b, 0));
 			if (event.type == sf::Event::MouseButtonReleased)

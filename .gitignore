@@ -1,0 +1,7 @@
+Debug
+*.dll
+*.sln
+SFML-2.6.1
+*.zip
+*.aseprite
+*.vs

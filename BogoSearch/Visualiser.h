@@ -19,6 +19,10 @@ enum vis_mode
 class Visualiser
 {
 private:
+	sf::Sprite index_rt_s; //rename to index_rt_spr
+	int index_selected = 0;
+	int last_index_above = 0;
+	int first_index_below = 0;
 	int set_spd = 0, set_num = 0;
 	sf::Text set_spd_txt, set_num_txt;
 	int mode = vis_mode::none;
@@ -33,6 +37,7 @@ private:
 	sf::RenderTexture index_rt;
 	sf::View new_v; //rename to something more appropriate 
 	int y_move_to = 0;
+	int selected_index = -1;
 public:
 	Visualiser(sf::RenderTexture& rt, sf::View& view, sf::Font& fnt) : back_button(-1, -1, sf::Color(255, 0, 0), fnt, "Back", sf::Color(0, 0, 0)),
 		page_inc("Page:", fnt, 16, sf::Vector2f(0, 0), sf::Vector2f(0, 0), sf::Color(255, 0, 0), 1, "", 1, std::numeric_limits<int>::max(), 0)
@@ -54,6 +59,7 @@ public:
 	void set_mode(int new_mode);
 	void display_set_settings(sf::RenderTexture& rt, sf::View& view, int new_spd_lim, int new_indices_num);
 	int handle_events(sf::RenderTexture& rt, sf::RenderWindow& win, sf::View &view , sf::Event& event);
-	int look_4_1st_index_offscreen_on_y(sf::RenderTexture& rt, sf::View& view);
+	void look_4_1st_index_offscreen_on_y(sf::RenderTexture& rt, sf::View& view);
+	void select_index(sf::RenderTexture& rt, sf::RenderWindow& win, sf::View& view, sf::Event& event);
 };
 

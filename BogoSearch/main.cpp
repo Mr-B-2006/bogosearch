@@ -22,6 +22,7 @@ int main()
         sf::View render_view(sf::FloatRect(0, 0, drawable_calculations::initial_win_size.x / 1.15, drawable_calculations::initial_win_size.y / 1.15));
         renderTexture.setSmooth(false); // Disable smoothing for the render texture
 
+        //window.setFramerateLimit(60);
 
         States st(renderTexture, main_view, main_font);
         window.setView(main_view);

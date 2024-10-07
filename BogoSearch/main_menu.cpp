@@ -38,7 +38,6 @@ int main_menu::handle_events(sf::RenderTexture &rt, sf::RenderWindow &win, sf::E
 		num_indices_inc.handle_buttons(rt, win, event);
 		if (submit_button.was_pressed(rt, win, event))
 		{
-
 			select_spd = select_spd_inc.getIncrementie();
 			num_indices = num_indices_inc.getIncrementie();
 			return return_mode::vis_run_mode;

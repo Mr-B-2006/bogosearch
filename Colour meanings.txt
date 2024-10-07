@@ -4,3 +4,5 @@
 -purple(177, 52, 168): this is the index Bogosearch has selected
 -light blue(16, 211, 247): this index is the index BogoSearch is looking for
 -green(69, 198, 26): the index has been found
+
+maybe make selected index black or a more noticeable colour for higher framerates

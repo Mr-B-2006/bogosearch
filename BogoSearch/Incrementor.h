@@ -9,6 +9,8 @@
 
 //TO DO: create triangular button class and implement triangular buttons
 //in incrementors
+//TO DO: allow incrementors to increment/decrement by a given amount on
+//each button press
 
 enum inc_states
 {

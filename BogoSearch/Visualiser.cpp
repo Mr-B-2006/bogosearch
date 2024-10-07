@@ -2,6 +2,9 @@
 #include "Visualiser.h"
 /*
 
+THIS PROGRAM IS "FINISHED" BUT SEVERAL QUALITY OF LIFE AND BUG FIXES NEED
+TO BE ADDED (the boring stuff :( )
+
 TO DO (10/09/2024):
 ~make it so the index the user wants to be found can be selected by clicking
 an index in the preview menu
@@ -22,7 +25,10 @@ how many rows/columns there actually are
 
 void Visualiser::render_vis(sf::RenderTexture& rt, sf::View& view)
 {
-	std::cout << "selected_index: " << selected_index << "\n";
+	if (bogo_searching)
+	{
+		run_bogosearch();
+	}
 	rt.draw(set_spd_txt);
 	rt.draw(set_num_txt);
 	back_button.draw(rt, view);
@@ -39,6 +45,10 @@ void Visualiser::render_vis(sf::RenderTexture& rt, sf::View& view)
 	index_rt_s.setTextureRect(sf::IntRect(0,0,index_rt.getSize().x, index_rt.getSize().y));
 	index_rt_s.setPosition(0, set_num_txt.getPosition().y + set_num_txt.getGlobalBounds().height +10);
 	rt.draw(index_rt_s);
+	if (mode == vis_mode::running)
+	{
+		start_button.draw(rt, view);
+	}
 }
 
 void Visualiser::display_indices(sf::RenderTexture& rt, sf::View& view) //this could be optimised by making sure that row specific logic/calculations are performed for each row rather than each index (rows + columns)
@@ -80,6 +90,7 @@ void Visualiser::display_indices(sf::RenderTexture& rt, sf::View& view) //this c
 	{
 		indices[selected_index].setFillColor(sf::Color(210, 163, 0));
 	}
+	set_positions(rt, view);
 }
 
 void Visualiser::look_4_1st_index_offscreen_on_y(sf::RenderTexture& rt, sf::View& view) //i dont think we need the main view (&view) to be here, same possible for display_indices()
@@ -109,6 +120,8 @@ void Visualiser::set_positions(sf::RenderTexture& rt, sf::View& view) //this run
 	back_button.setPosition(rt.getSize().x - back_button.getGlobalBounds().width - 2, rt.getSize().y - back_button.getGlobalBounds().height - 2);
 	set_num_txt.setPosition(0, set_spd_txt.getPosition().y + set_spd_txt.getGlobalBounds().height+4);
 	page_inc.change_inc_pos(0, view.getSize().y - page_inc.getGlobalBounds().height - 4);
+	start_button.setPosition(back_button.getPosition().x - start_button.getGlobalBounds().width - 4, back_button.getPosition().y);
+
 }
 
 int Visualiser::handle_events(sf::RenderTexture &rt, sf::RenderWindow &win, sf::View &view ,sf::Event &event) //
@@ -155,6 +168,10 @@ int Visualiser::handle_events(sf::RenderTexture &rt, sf::RenderWindow &win, sf::
 		return vis_mode::none;
 	}
 	select_index(rt, win, new_v, event);
+	if (mode == vis_mode::running)
+	{
+		start_bogosearch(rt, win, event);
+	}
 	return mode;
 }
 
@@ -163,8 +180,9 @@ void Visualiser::set_mode(int new_mode)
 	mode = new_mode;
 }
 
-void Visualiser::display_set_settings(sf::RenderTexture &rt, sf::View &view, int new_spd_lim, int new_indices_num) //runs for one frame when switching from setting up to visualiser
+void Visualiser::display_set_settings(sf::RenderWindow &win, sf::RenderTexture &rt, sf::View &view, int new_spd_lim, int new_indices_num) //runs for one frame when switching from setting up to visualiser
 { //we dont divide by 1.15 here because it is already accounted for by the view size
+	
 	int y_component_temp = (view.getSize().y - 84); //when there is time, try to clean up this code :p
 	index_rt.create((view.getSize().x), y_component_temp);
 	new_v = sf::View(sf::FloatRect(0, 0, (view.getSize().x), y_component_temp));
@@ -173,10 +191,12 @@ void Visualiser::display_set_settings(sf::RenderTexture &rt, sf::View &view, int
 	if (set_spd != 0)
 	{
 		set_spd_txt.setString("Selection speed/fps: " + std::to_string(set_spd));
+		win.setFramerateLimit(set_spd);
 	}
 	else
 	{
 		set_spd_txt.setString("Selection speed/fps: No limit");
+		win.setFramerateLimit(0);
 	}
 	set_num = new_indices_num;
 	display_indices(rt, view);
@@ -201,9 +221,46 @@ void Visualiser::select_index(sf::RenderTexture& rt, sf::RenderWindow& win, sf::
 				indices[i].setFillColor(sf::Color(210, 163, 0));
 				if (index_mouse_relationship == mouse_state::click)
 				{
-					selected_index = i;
+					if (selected_index != i)
+					{
+						selected_index = i;
+					}
+					else
+					{
+						selected_index = -1;
+						indices[i].setFillColor(sf::Color(255, 0, 0));
+					}
 				}
 			}
 		}
 	}
+}
+
+void Visualiser::start_bogosearch(sf::RenderTexture& rt, sf::RenderWindow& win, sf::Event event)
+{
+	if (start_button.was_pressed(rt, win, event))
+	{
+		if (selected_index == -1)
+		{
+			selected_index = rand() % set_num;
+		}
+		indices[selected_index].setFillColor(sf::Color(16, 211, 247));
+		bogo_searching = true;
+	}
+}
+
+void Visualiser::run_bogosearch()
+{
+	
+		if (bogo_selected != selected_index)
+		{
+			indices[bogo_selected].setFillColor(sf::Color(255, 0, 0));
+		}
+		bogo_selected = rand() % set_num;
+		indices[bogo_selected].setFillColor(sf::Color(177, 52, 168));
+		if (bogo_selected == selected_index)
+		{
+			indices[bogo_selected].setFillColor(sf::Color(69, 198, 26));
+			bogo_searching = false;
+		}
 }

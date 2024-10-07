@@ -4,5 +4,5 @@ Debug
 SFML-2.6.1
 *.zip
 *.aseprite
-.vs
+.vs/BogoSearch
 *.ipch

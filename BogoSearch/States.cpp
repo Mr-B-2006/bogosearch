@@ -29,11 +29,9 @@ void States::state_manager_event(sf::RenderTexture &rt, sf::RenderWindow &win, s
 		vis.set_positions(rt, view);
 		break;
 	}
-
-	std::cout << "mode: " << mode << "\n";
 }
 
-void States::state_manager_rt(sf::RenderTexture &rt, sf::View &view)
+void States::state_manager_rt(sf::RenderWindow &win, sf::RenderTexture &rt, sf::View &view)
 {
 	switch (current_state)
 	{
@@ -41,10 +39,10 @@ void States::state_manager_rt(sf::RenderTexture &rt, sf::View &view)
 		mm.render_menu(rt, view);
 		break;
 	case state_keys::vis_preview:
-		vis.render_vis(rt, view);
+		vis.render_vis(win, rt, view);
 		break;
 	case state_keys::vis_run:
-		vis.render_vis(rt, view);
+		vis.render_vis(win, rt, view);
 		break;
 	}
 }

@@ -1,5 +1,6 @@
 //switching pages shows the bottom row of the last page as the top row of the current page, this was technically a bug, but i may consider it a feature as it can give the user an idea of where the page they are exists in regards to the whole load of indices
 #include "Visualiser.h"
+#include <sstream>
 /*
 
 THIS PROGRAM IS "FINISHED" BUT SEVERAL QUALITY OF LIFE AND BUG FIXES NEED
@@ -23,15 +24,20 @@ make row+column structures easier to manage as itll be easier to calculate
 how many rows/columns there actually are 
 */
 
-void Visualiser::render_vis(sf::RenderTexture& rt, sf::View& view)
+void Visualiser::render_vis(sf::RenderWindow &win, sf::RenderTexture& rt, sf::View& view)
 {
-	if (bogo_searching)
+	if (!bogo_searching)
 	{
-		run_bogosearch();
+		back_button.draw(rt, view); 
+		start_button.draw(rt, view);
+	}
+	else
+	{
+		run_bogosearch(win);
 	}
 	rt.draw(set_spd_txt);
 	rt.draw(set_num_txt);
-	back_button.draw(rt, view);
+
 	page_inc.render_incrementor(rt);
 	
 	index_rt.clear(/*sf::Color(0, 0, 255, 128)*/); //colour parameter is only used for debugging purposes
@@ -45,10 +51,7 @@ void Visualiser::render_vis(sf::RenderTexture& rt, sf::View& view)
 	index_rt_s.setTextureRect(sf::IntRect(0,0,index_rt.getSize().x, index_rt.getSize().y));
 	index_rt_s.setPosition(0, set_num_txt.getPosition().y + set_num_txt.getGlobalBounds().height +10);
 	rt.draw(index_rt_s);
-	if (mode == vis_mode::running)
-	{
-		start_button.draw(rt, view);
-	}
+	
 }
 
 void Visualiser::display_indices(sf::RenderTexture& rt, sf::View& view) //this could be optimised by making sure that row specific logic/calculations are performed for each row rather than each index (rows + columns)
@@ -158,20 +161,23 @@ int Visualiser::handle_events(sf::RenderTexture &rt, sf::RenderWindow &win, sf::
 		display_indices(rt, new_v);
 		look_4_1st_index_offscreen_on_y(rt, view);
 	}
-	else if (back_button.was_pressed(rt, win, event))
-	{
-		pages_needed = false;
-		set_mode(vis_mode::none);
-		indices.clear();
-		page_inc.reset();
-		//selected_index = -1;
-		return vis_mode::none;
-	}
 	select_index(rt, win, new_v, event);
-	if (mode == vis_mode::running)
+	if (!bogo_searching)
 	{
-		start_bogosearch(rt, win, event);
+		if (back_button.was_pressed(rt, win, event))
+		{
+			pages_needed = false;
+			set_mode(vis_mode::none);
+			indices.clear();
+			page_inc.reset();
+			return vis_mode::none;
+		}
+		if (mode == vis_mode::running)
+		{
+			start_bogosearch(rt, win, event);
+		}
 	}
+	
 	return mode;
 }
 
@@ -191,12 +197,10 @@ void Visualiser::display_set_settings(sf::RenderWindow &win, sf::RenderTexture &
 	if (set_spd != 0)
 	{
 		set_spd_txt.setString("Selection speed/fps: " + std::to_string(set_spd));
-		win.setFramerateLimit(set_spd);
 	}
 	else
 	{
 		set_spd_txt.setString("Selection speed/fps: No limit");
-		win.setFramerateLimit(0);
 	}
 	set_num = new_indices_num;
 	display_indices(rt, view);
@@ -240,27 +244,36 @@ void Visualiser::start_bogosearch(sf::RenderTexture& rt, sf::RenderWindow& win, 
 {
 	if (start_button.was_pressed(rt, win, event))
 	{
+		win.setFramerateLimit(set_spd);
 		if (selected_index == -1)
 		{
 			selected_index = rand() % set_num;
 		}
 		indices[selected_index].setFillColor(sf::Color(16, 211, 247));
+		Bogo_elapsed.restart();
 		bogo_searching = true;
 	}
 }
 
-void Visualiser::run_bogosearch()
+void Visualiser::run_bogosearch(sf::RenderWindow &win)
 {
-	
-		if (bogo_selected != selected_index)
-		{
-			indices[bogo_selected].setFillColor(sf::Color(255, 0, 0));
-		}
-		bogo_selected = rand() % set_num;
-		indices[bogo_selected].setFillColor(sf::Color(177, 52, 168));
-		if (bogo_selected == selected_index)
-		{
-			indices[bogo_selected].setFillColor(sf::Color(69, 198, 26));
-			bogo_searching = false;
-		}
+	if (bogo_selected != selected_index)
+	{
+		indices[bogo_selected].setFillColor(sf::Color(255, 0, 0));
+	}
+	bogo_selected = rand() % set_num;
+	indices[bogo_selected].setFillColor(sf::Color(177, 52, 168));
+	if (bogo_selected == selected_index)
+	{
+		std::stringstream displayed_time_stream;
+		float displayed_time_f = round(static_cast<double>(static_cast<double>(Bogo_elapsed.getElapsedTime().asMilliseconds()) / 10))/100;
+		displayed_time_stream << displayed_time_f;
+		std::string displayed_time_str = displayed_time_stream.str();
+		
+		MessageBoxA(NULL, ("BogoSearch took " + displayed_time_str).c_str(), "Unable to find font file.", MB_OK);
+		Bogo_elapsed.restart();
+		indices[bogo_selected].setFillColor(sf::Color(69, 198, 26));
+		win.setFramerateLimit(0);
+		bogo_searching = false;
+	}
 }

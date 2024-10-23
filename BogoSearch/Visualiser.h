@@ -41,6 +41,7 @@ private: //some of these variables seem to be unused, get rid of unused ones
 	int selected_index = -1;
 	bool bogo_searching = false;
 	int bogo_selected = 0;
+	sf::Clock Bogo_elapsed;
 public:
 	Visualiser(sf::RenderTexture& rt, sf::View& view, sf::Font& fnt) : back_button(-1, -1, sf::Color(255, 0, 0), fnt, "Back", sf::Color(0, 0, 0)),
 		page_inc("Page:", fnt, 16, sf::Vector2f(0, 0), sf::Vector2f(0, 0), sf::Color(255, 0, 0), 1, "", 1, std::numeric_limits<int>::max(), 0),
@@ -56,7 +57,7 @@ public:
 		page_inc.change_inc_pos(0, view.getSize().y - page_inc.getGlobalBounds().height - 4);
 		start_button.setPosition(back_button.getPosition().x - start_button.getGlobalBounds().width - 4, back_button.getPosition().y);
 	}
-	void render_vis(sf::RenderTexture& rt, sf::View& view);
+	void render_vis(sf::RenderWindow& win, sf::RenderTexture& rt, sf::View& view);
 	void display_indices(sf::RenderTexture &rt, sf::View &view);
 	void set_positions(sf::RenderTexture& rt, sf::View& view);
 	void set_mode(int new_mode);
@@ -65,6 +66,6 @@ public:
 	void look_4_1st_index_offscreen_on_y(sf::RenderTexture& rt, sf::View& view);
 	void select_index(sf::RenderTexture& rt, sf::RenderWindow& win, sf::View& view, sf::Event& event);
 	void start_bogosearch(sf::RenderTexture &rt, sf::RenderWindow &win, sf::Event event);
-	void run_bogosearch();
+	void run_bogosearch(sf::RenderWindow &win);
 };
 

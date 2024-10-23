@@ -32,7 +32,7 @@ public:
 
 	}
 	void state_manager_event(sf::RenderTexture &rt, sf::RenderWindow &win, sf::View &view, sf::Event &event);
-	void state_manager_rt(sf::RenderTexture &rt, sf::View &view);
+	void state_manager_rt(sf::RenderWindow &win, sf::RenderTexture &rt, sf::View &view);
 	int get_current_state();
 	void set_current_state(int new_state);
 	

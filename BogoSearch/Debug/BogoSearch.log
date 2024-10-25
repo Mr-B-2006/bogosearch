@@ -1,11 +1,11 @@
-﻿  Visualiser.cpp
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(167,21): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(167,16): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(175,32): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(175,32): warning C4244:         with
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(175,32): warning C4244:         [
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(175,32): warning C4244:             T=float
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(175,32): warning C4244:         ]
+﻿  States.cpp
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(163,21): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(163,16): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(172,32): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(172,32): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(172,32): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(172,32): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(172,32): warning C4244:         ]
 C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(22,41): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
 C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(22,41): warning C4244:         with
 C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(22,41): warning C4244:         [
@@ -26,91 +26,265 @@ C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,
 C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,37): warning C4244:         [
 C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,37): warning C4244:             T=float
 C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,37): warning C4244:         ]
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(47,87): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(47,87): warning C4244:         with
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(47,87): warning C4244:         [
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(47,87): warning C4244:             T=float
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(47,87): warning C4244:         ]
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(47,83): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(47,83): warning C4244:         with
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(47,83): warning C4244:         [
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(47,83): warning C4244:             T=float
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(47,83): warning C4244:         ]
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,90): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,90): warning C4244:         with
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,90): warning C4244:         [
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,90): warning C4244:             T=float
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,90): warning C4244:         ]
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,85): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,85): warning C4244:         with
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,85): warning C4244:         [
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,85): warning C4244:             T=float
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,85): warning C4244:         ]
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(57,83): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(57,83): warning C4244:         with
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(57,83): warning C4244:         [
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(57,83): warning C4244:             T=float
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(57,83): warning C4244:         ]
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(59,61): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(59,61): warning C4244:         with
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(59,61): warning C4244:         [
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(59,61): warning C4244:             T=float
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(59,61): warning C4244:         ]
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(59,48): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(59,48): warning C4244:         with
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(59,48): warning C4244:         [
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(59,48): warning C4244:             T=float
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(59,48): warning C4244:         ]
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(72,58): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(72,58): warning C4244:         with
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(72,58): warning C4244:         [
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(72,58): warning C4244:             T=float
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(72,58): warning C4244:         ]
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(72,45): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(72,45): warning C4244:         with
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(72,45): warning C4244:         [
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(72,45): warning C4244:             T=float
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(72,45): warning C4244:         ]
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(84,67): warning C4018: '>': signed/unsigned mismatch
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(86,33): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(86,33): warning C4244:         with
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(86,33): warning C4244:         [
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(86,33): warning C4244:             T=float
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(86,33): warning C4244:         ]
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(125,82): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(125,82): warning C4244:         with
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(125,82): warning C4244:         [
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(125,82): warning C4244:             T=float
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(125,82): warning C4244:         ]
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(136,17): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(141,77): warning C4018: '>': signed/unsigned mismatch
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(143,18): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(155,24): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(156,37): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(157,67): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(157,67): warning C4244:         with
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(157,67): warning C4244:         [
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(157,67): warning C4244:             T=float
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(157,67): warning C4244:         ]
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(157,59): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(157,59): warning C4244:         with
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(157,59): warning C4244:         [
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(157,59): warning C4244:             T=float
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(157,59): warning C4244:         ]
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(192,23): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(192,23): warning C4244:         with
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(192,23): warning C4244:         [
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(192,23): warning C4244:             T=float
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(192,23): warning C4244:         ]
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(193,18): warning C4244: 'argument': conversion from 'const T' to 'unsigned int', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(193,18): warning C4244:         with
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(193,18): warning C4244:         [
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(193,18): warning C4244:             T=float
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(193,18): warning C4244:         ]
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(194,59): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(194,59): warning C4244:         with
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(194,59): warning C4244:         [
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(194,59): warning C4244:             T=float
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(194,59): warning C4244:         ]
-C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(270,26): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,87): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,87): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,87): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,87): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,87): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,83): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,83): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,83): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,83): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,83): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,90): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,90): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,90): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,90): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,90): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,85): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,85): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,85): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,85): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,85): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(53,83): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(53,83): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(53,83): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(53,83): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(53,83): warning C4244:         ]
+  Visualiser.cpp
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(163,21): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(163,16): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(172,32): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(172,32): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(172,32): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(172,32): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(172,32): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(22,41): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(22,41): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(22,41): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(22,41): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(22,41): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(26,41): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(26,41): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(26,41): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(26,41): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(26,41): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,49): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,49): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,49): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,49): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,49): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,37): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,37): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,37): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,37): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,37): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,87): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,87): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,87): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,87): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,87): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,83): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,83): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,83): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,83): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,83): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,90): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,90): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,90): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,90): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,90): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,85): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,85): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,85): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,85): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,85): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(53,83): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(53,83): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(53,83): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(53,83): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(53,83): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(58,61): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(58,61): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(58,61): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(58,61): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(58,61): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(58,48): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(58,48): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(58,48): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(58,48): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(58,48): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(70,58): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(70,58): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(70,58): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(70,58): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(70,58): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(70,45): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(70,45): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(70,45): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(70,45): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(70,45): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(78,75): warning C4018: '>': signed/unsigned mismatch
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(80,33): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(80,33): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(80,33): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(80,33): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(80,33): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(118,82): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(118,82): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(118,82): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(118,82): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(118,82): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(128,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(133,85): warning C4018: '>': signed/unsigned mismatch
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(135,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(147,69): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(147,37): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(148,100): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(148,100): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(148,100): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(148,100): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(148,100): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(148,67): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(148,67): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(148,67): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(148,67): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(148,67): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(180,38): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(180,38): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(180,38): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(180,38): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(180,38): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(180,18): warning C4244: 'argument': conversion from 'const T' to 'unsigned int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(180,18): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(180,18): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(180,18): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(180,18): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.cpp(256,26): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  main.cpp
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(163,21): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(163,16): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(172,32): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(172,32): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(172,32): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(172,32): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Drawable_calculations.h(172,32): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(22,41): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(22,41): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(22,41): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(22,41): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(22,41): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(26,41): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(26,41): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(26,41): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(26,41): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(26,41): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,49): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,49): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,49): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,49): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,49): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,37): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,37): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,37): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,37): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Base_Button.h(28,37): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,87): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,87): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,87): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,87): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,87): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,83): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,83): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,83): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,83): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(48,83): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,90): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,90): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,90): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,90): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,90): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,85): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,85): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,85): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,85): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Incrementor.h(49,85): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(53,83): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(53,83): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(53,83): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(53,83): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\Visualiser.h(53,83): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(16,125): warning C4244: 'argument': conversion from 'const T' to 'unsigned int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(16,125): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(16,125): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(16,125): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(16,125): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(16,82): warning C4244: 'argument': conversion from 'const T' to 'unsigned int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(16,82): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(16,82): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(16,82): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(16,82): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(17,136): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(17,136): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(17,136): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(17,136): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(17,136): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(17,86): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(17,86): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(17,86): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(17,86): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(17,86): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(20,123): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(20,73): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(22,138): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(22,138): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(22,138): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(22,138): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(22,138): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(22,88): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(22,88): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(22,88): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(22,88): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(22,88): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(42,88): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(42,88): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(42,88): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(42,88): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(42,88): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(42,88): warning C4244:         and
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(42,88): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(42,88): warning C4244:             T=unsigned int
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(42,88): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(46,108): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(46,108): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(46,108): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(46,108): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(46,108): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(46,108): warning C4244:         and
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(46,108): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(46,108): warning C4244:             T=unsigned int
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(46,108): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(48,101): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(48,101): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(48,101): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(48,101): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(48,101): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(48,75): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(48,75): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(48,75): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(48,75): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(48,75): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(49,103): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(49,103): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(49,103): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(49,103): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(49,103): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(49,77): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(49,77): warning C4244:         with
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(49,77): warning C4244:         [
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(49,77): warning C4244:             T=float
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(49,77): warning C4244:         ]
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(50,81): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\BogoSearch\main.cpp(50,55): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+  Generating Code...
   BogoSearch.vcxproj -> C:\Users\mrb20\Desktop\!C++ projects\ssd bogosearch\Debug\BogoSearch.exe

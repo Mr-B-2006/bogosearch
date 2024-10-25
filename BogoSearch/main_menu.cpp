@@ -3,18 +3,16 @@
 void main_menu::set_positions(sf::RenderTexture &rt, sf::View &view)
 {
 	menu_txt.setPosition(drawable_calculations::center_transformable_return(menu_txt, view).x, 50);
-
 	start_button.setPosition(drawable_calculations::center_n_offset_transformable(start_button, 0, -(5 + (start_button.getGlobalBounds().height/2)), view));
 	quit_button.setPosition(drawable_calculations::center_n_offset_transformable(quit_button, 0, (5 + (quit_button.getGlobalBounds().height/2)), view));
 	back_button.setPosition(rt.getSize().x - back_button.getGlobalBounds().width - 2, rt.getSize().y - back_button.getGlobalBounds().height - 2);
 	submit_button.setPosition(2, rt.getSize().y - submit_button.getGlobalBounds().height - 2);
 	select_index.setPosition(submit_button.getPosition().x, submit_button.getPosition().y - 4 - select_index.getGlobalBounds().height);
-
 }
 
 void main_menu::render_menu(sf::RenderTexture& rt, sf::View& view)
 {
-	if (setting_up)
+	if (setting_up) //when "Start" is selected
 	{
 		select_spd_inc.render_incrementor(rt);
 		num_indices_inc.render_incrementor(rt);
@@ -22,7 +20,7 @@ void main_menu::render_menu(sf::RenderTexture& rt, sf::View& view)
 		submit_button.draw(rt, view);
 		select_index.draw(rt, view);
 	}
-	else
+	else //first screen
 	{
 		start_button.draw(rt, view);
 		quit_button.draw(rt, view);
@@ -30,7 +28,7 @@ void main_menu::render_menu(sf::RenderTexture& rt, sf::View& view)
 	}
 }
 
-int main_menu::handle_events(sf::RenderTexture &rt, sf::RenderWindow &win, sf::Event &event)
+int main_menu::handle_events(sf::RenderTexture &rt, sf::RenderWindow &win, sf::Event &event) //handles parts of the program that need to go into the event loop (such as clicking buttons)
 {
 	if (setting_up)
 	{
@@ -44,7 +42,7 @@ int main_menu::handle_events(sf::RenderTexture &rt, sf::RenderWindow &win, sf::E
 		}
 		else if (back_button.was_pressed(rt, win, event))
 		{
-			setting_up = false;
+			setting_up = false; //return to first menu
 		}
 		else if (select_index.was_pressed(rt, win, event))
 		{
@@ -57,11 +55,11 @@ int main_menu::handle_events(sf::RenderTexture &rt, sf::RenderWindow &win, sf::E
 	{
 		if (start_button.was_pressed(rt, win, event))
 		{
-			setting_up = true;
+			setting_up = true; //go to set up screen
 		}
 		else if (quit_button.was_pressed(rt, win, event))
 		{
-			exit(0);
+			exit(0); //exit program successfully
 		}
 	}
 	return return_mode::main_menu_mode;

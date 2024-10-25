@@ -17,7 +17,7 @@ protected:
 		drawable_calculations::initialise_sftext(button_txt, fnt, 16, button_str_param);
 		button_txt.setFillColor(txt_colour_param);
 		txt_colour = txt_colour_param;
-		if (size_x < 0)
+		if (size_x < 0) //if no specified size is given, we will just give the button similar dimensions to the text
 		{
 			size_x = button_txt.getGlobalBounds().width;
 		}

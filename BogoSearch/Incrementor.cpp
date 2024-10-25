@@ -22,21 +22,10 @@ int Incrementor::handle_buttons(sf::RenderTexture& rt, sf::RenderWindow& win, sf
 	}
 	else if (drawable_calculations::chk_L_click(rt, win, tri_left, event, this->getFillColor()) == mouse_state::click)
 	{
-		bool return_flag = false;
-		if (incrementie-1 > min_val)
+		if (incrementie > min_val)
 		{
 			incrementie--;
-			incrementie_txt.setString(std::to_string(incrementie));
-			return_flag = true;
-		}
-		else
-		{
-			if (incrementie == min_val+1)
-			{
-				incrementie--;
-				return_flag = true;
-			}
-			if (!min_val_str.empty())
+			if (!min_val_str.empty() && incrementie == min_val) //we need to check if we need to assign a minimum value string to incrementie_txt, if there is one
 			{
 				incrementie_txt.setString(min_val_str);
 			}
@@ -44,10 +33,7 @@ int Incrementor::handle_buttons(sf::RenderTexture& rt, sf::RenderWindow& win, sf
 			{
 				incrementie_txt.setString(std::to_string(incrementie));
 			}
-		}
-		tri_right.setPosition(incrementie_txt.getPosition().x + incrementie_txt.getGlobalBounds().width + tri_right.getGlobalBounds().width + 5, tri_right.getPosition().y);
-		if (return_flag)
-		{
+			tri_right.setPosition(incrementie_txt.getPosition().x + incrementie_txt.getGlobalBounds().width + tri_right.getGlobalBounds().width + 5, tri_right.getPosition().y);
 			return inc_states::down;
 		}
 	}
@@ -78,5 +64,4 @@ void Incrementor::change_inc_pos(int x, int y)
 	tri_left.setPosition(this->getPosition().x + this->getGlobalBounds().width + 6 + offset_from_label.x, this->getPosition().y + tri_left.getGlobalBounds().height + offset_from_label.y);
 	incrementie_txt.setPosition(tri_left.getPosition().x + tri_left.getGlobalBounds().width + 4, tri_left.getPosition().y - tri_left.getGlobalBounds().height + 2);
 	tri_right.setPosition(incrementie_txt.getPosition().x + incrementie_txt.getGlobalBounds().width + tri_right.getGlobalBounds().width + 4, tri_left.getPosition().y - tri_right.getGlobalBounds().height + 3);
-
 }

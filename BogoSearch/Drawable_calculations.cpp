@@ -11,8 +11,6 @@ void drawable_calculations::center_sprite(sf::Sprite& spr, sf::View& view) //the
 	spr.setPosition(view.getCenter().x - (spr.getTextureRect().width / 2), view.getCenter().y - (spr.getTextureRect().height / 2));
 }
 
-
-
 void drawable_calculations::center_n_offset_text(sf::Text& txt, int x, int y, sf::View& view) //centres and applies an offset to a sf::Sprite or sf::Text
 {
 	txt.setPosition(view.getCenter().x - (txt.getGlobalBounds().width / 2) + x, view.getCenter().y - (txt.getGlobalBounds().height / 2) + y);
@@ -71,18 +69,6 @@ bool drawable_calculations::load_n_check_spr(sf::Texture & texture, sf::Sprite& 
 	spr.setTexture(texture); 
 	return true;
 }
-
-bool drawable_calculations::load_n_check_txt(sf::Font &font, sf::Text& txt, std::string path)
-{
-	if (!(font.loadFromFile(path)))
-	{
-		MessageBoxA(NULL, ("Unable to locate font file in " + path).c_str(), "Unable to find font file.", MB_OK | MB_ICONSTOP);
-		return false;
-	}
-	txt.setFont(font);
-	return true;
-}
-
 
 std::string drawable_calculations::file_dialogue()
 {

@@ -13,3 +13,5 @@ This specific program features:<br/>
 ~A recording of the time taken for the algorithm to find.<br/>
 <br/>
 For now, this project is, for the most part, considered complete, however, I do have an idea for some extra features, such as saving the best time for a given configuration (amount of indices and fps). There are also some other QOL/code refactors that could also be implemented in the future, but this was always intended to be a silly joke project, so im not too worried about that right now.<br/>
+
+This project is using a **very** early version of my "Arrow Engine" library (from before I even made it into a proper library) for buttons, incrementors and most other GUI things. Expect to see documentation for stuff like that on that project's page (although the readability of my code and it's comments should already give you the info you need ;p ). 
